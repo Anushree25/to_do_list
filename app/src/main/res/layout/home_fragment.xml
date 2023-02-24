@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#efefef"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.HomeFragment">
+
+    <TextView
+        android:textColor="#111111"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="what's your plan?" />
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:layout_margin="5dp"
+            android:background="@color/dark_blue"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:text="Personal"
+            android:layout_weight="1"
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp" />
+        <Button
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:background="@color/dark_green"
+            android:textSize="10sp"
+            android:text="Work"
+            android:layout_weight="1"
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp" />
+        <Button
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:background="@color/dark_pink"
+            android:textSize="10sp"
+            android:text="Shopping"
+            android:layout_weight="1"
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp" />
+        <Button
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:background="@color/navy_blue"
+            android:textSize="10sp"
+            android:text="Movies"
+            android:layout_weight="1"
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:textColor="#111111"
+        android:textStyle="bold"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:text="Upcoming To Do's"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="15dp"
+        android:id="@+id/to_do_lists"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/notesMessage"
+        android:textColor="#111111"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:textStyle="normal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:text="Tasks are not added yet."
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
